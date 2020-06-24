@@ -16,7 +16,7 @@ export default class App extends Component{
     }
   }
 
-  calculation = () => {
+  analyzation = () => {
     let v = 0;
     let k = 0; 
     let word = this.state.word;
@@ -49,7 +49,7 @@ export default class App extends Component{
        
         </View>
         <View style={Styles.container}>
-        <Button color="#ff7675" onPress={this.calculation} title='Analyse'/>
+        <Button color="#ff7675" onPress={this.analyzation} title='Analyse'/>
         <Text></Text>
         <Text style={Styles.answer}>Total Word : {this.state.word.length}</Text>
         <Text style={Styles.answer}>Vowel: {this.state.vowel}</Text>
